@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Kai Phish Shield - Optimized AI",
+  "version": "2.0",
+  "description": "Optimized heuristic AI phishing blocker — intercepts typed, pasted, and clicked links with risk scoring and counters.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": ["http://*/*","https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
+

@@ -1,4 +1,4 @@
-console.log("Kai Shield Content running");
+console.log(" Shield Content running");
 
 const THRESHOLD = 0.45;
 const SUSPICIOUS_WORDS = [

@@ -1,4 +1,4 @@
-console.log("Kai Shield Background running");
+console.log(" Shield Background running");
 
 // --- Heuristic settings (keep your values) ---
 const THRESHOLD = 0.45;
